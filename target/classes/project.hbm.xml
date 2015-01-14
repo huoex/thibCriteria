@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="com.hex.thibCriteria.project" table="project">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="title" column="title" type="string" />
+		<property name="type" column="type" type="string" />
+		<property name="snapshotAddr" column="snapshotAddr" type="string" />
+		<property name="sourceLinkAddr" column="sourceLinkAddr"
+			type="string" />
+		<property name="projectFileAddr" column="projectFileAddr"
+			type="string" />
+		<property name="download" column="download" type="string" />
+		<property name="version" column="version" type="string" />
+		<property name="price" column="price" type="string" />
+		<property name="introduction" column="introduction" type="string" />
+		<property name="releaseDate" column="releaseDate" type="string" />
+		<property name="updateTime" column="updateTime" type="string" />
+		<property name="addTime" column="addTime" type="string" />
+	</class>
+</hibernate-mapping>
